@@ -12,6 +12,7 @@ describe('HTTP server', () => {
 
   afterEach(async () => {
     await UsersTableTestHelper.cleanTable();
+    await AuthenticationsTableTestHelper.cleanTable();
   });
 
   describe('when POST /users', () => {
